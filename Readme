@@ -1,0 +1,41 @@
+#Just my Qtile setup
+
+My app installation
+
+Qtile for Window Manager
+
+Picom for compisitor
+
+Thunar for file explorer
+
+Rofi for menu laucher
+
+Nitrogen for Wallpaper
+
+Redshift for eye safe
+
+Nerdfont for font and symbol
+
+lxappearance for theming window
+
+blueman for bluetooth manager
+
+NetworkManager for network
+
+Pirewire & Pulseaudio for Audio setup
+
+#Adjust mouse & Trackpoint speed
+
+$ cd /usr/share/X11/xorg.conf.d/  
+$ sudo nano 40-libinput.conf
+
+Section "InputClass"  
+    Identifier "libinput pointer catchall"  
+    MatchIsPointer "on"  
+    MatchDevicePath "/dev/input/event*"  
+    Driver "libinput"  
+    Option "AccelSpeed" "Between -1 to 1"
+    Option "AccelProfile" "flat" 
+EndSection
+
+
