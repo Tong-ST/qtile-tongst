@@ -5,7 +5,7 @@ My app installation
 Qtile for Window Manager
 Install on Debian 12 >> https://github.com/JerrySM64/Qtile-Debian
 
-Qtile-extras for Decoration
+Qtile-extras for Decoration [a Must for **powerline usage]
 
 Picom for compisitor
 
@@ -21,9 +21,18 @@ Nerdfont for font and symbol
 
 lxappearance for theming window
 
-blueman for bluetooth manager
-
 NetworkManager for network
+
+Fixing mouse speed >> https://askubuntu.com/questions/948373/change-cursor-speed-in-libinput
+
+Ranger for Terminal File Explorer
+
+Auto-CPUfreq for Better Battery life
+
+### More System Utility ###
+
+blueman for bluetooth manager
+Fix Bluetooth speaker problem in Debian 12 >> https://forums.debian.net/viewtopic.php?t=154544
 
 Pirewire, Pulseaudio
 Pamixer for Audio setup
@@ -31,10 +40,6 @@ Pamixer for Audio setup
 Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer --decrease 5")),
 Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer --increase 5")),
 Key([], "XF86AudioMute", lazy.spawn("pamixer --toggle-mute")),
-
-Ranger for Terminal File Explorer
-
-Auto-CPUfreq for Better Battery life
 
 Brightnessctl for Brightness Control
 # Brightness
