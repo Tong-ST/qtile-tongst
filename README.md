@@ -3,7 +3,7 @@
 ![debian](https://github.com/Tong-ST/qtile-tongst/blob/main/qtile_debian_setup.png)
 
 ## My app installation
-Qtile for Window Manager
+> Qtile for Window Manager
 Install on Debian 12 >> https://github.com/JerrySM64/Qtile-Debian
 
 Qtile-extras for Decoration [a Must for **powerline usage]
@@ -49,8 +49,8 @@ Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 
 ## Adjust mouse & Trackpoint speed
 
-$ cd /usr/share/X11/xorg.conf.d/  
-$ sudo nano 40-libinput.conf
+``` cd /usr/share/X11/xorg.conf.d/ ```  
+``` sudo nano 40-libinput.conf ```
 
 Section "InputClass"  
     Identifier "libinput pointer catchall"  
