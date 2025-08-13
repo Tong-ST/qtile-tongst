@@ -1,7 +1,8 @@
 # Personal Qtile setup
 
-My app installation
+![debian](https://github.com/Tong-ST/qtile-tongst/blob/main/qtile_debian_setup.png)
 
+## My app installation
 Qtile for Window Manager
 Install on Debian 12 >> https://github.com/JerrySM64/Qtile-Debian
 
