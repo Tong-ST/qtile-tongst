@@ -1,0 +1,63 @@
+# Personal Qtile setup
+
+My app installation
+
+Qtile for Window Manager
+Install on Debian 12 >> https://github.com/JerrySM64/Qtile-Debian
+
+Qtile-extras for Decoration [a Must for **powerline usage]
+
+Picom for compisitor
+
+Thunar for file explorer
+
+Rofi for menu laucher
+
+Nitrogen for Wallpaper
+
+Redshift for eye safe
+
+Nerdfont for font and symbol
+
+lxappearance for theming window
+
+NetworkManager for network
+
+Fixing mouse speed >> https://askubuntu.com/questions/948373/change-cursor-speed-in-libinput
+
+Ranger for Terminal File Explorer
+
+Auto-CPUfreq for Better Battery life
+
+### More System Utility ###
+
+blueman for bluetooth manager
+Fix Bluetooth speaker problem in Debian 12 >> https://forums.debian.net/viewtopic.php?t=154544
+
+Pirewire, Pulseaudio
+Pamixer for Audio setup
+## Volume
+Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer --decrease 5")),
+Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer --increase 5")),
+Key([], "XF86AudioMute", lazy.spawn("pamixer --toggle-mute")),
+
+Brightnessctl for Brightness Control
+## Brightness
+Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
+Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+
+## Adjust mouse & Trackpoint speed
+
+$ cd /usr/share/X11/xorg.conf.d/  
+$ sudo nano 40-libinput.conf
+
+Section "InputClass"  
+    Identifier "libinput pointer catchall"  
+    MatchIsPointer "on"  
+    MatchDevicePath "/dev/input/event*"  
+    Driver "libinput"  
+    Option "AccelSpeed" "Between -1 to 1"
+    Option "AccelProfile" "flat" 
+EndSection
+
+
